@@ -6,7 +6,7 @@ LandingPage para cafeteria
 
 
 ## Sitio desplegado en netlify
-> https://petsvet.netlify.app/
+> https://komorebi-cafeshop.netlify.app/
 
 ## ¿Qué se uso durante su desarrollo?
 
@@ -14,13 +14,16 @@ LandingPage para cafeteria
 - TailwindCSS
 - lucide-astro
 - Typescript
-- react-hook-form
+- react
+- swiper-react
+- google-maps embed
+
 
 
 
 ## ¿Qué páginas contiene?
 
-- Página de index ( https://petsvet.netlify.app/ )
+- Página de index ( https://komorebi-cafeshop.netlify.app/ )
 
 
 
