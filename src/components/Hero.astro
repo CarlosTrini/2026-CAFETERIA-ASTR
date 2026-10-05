@@ -1,0 +1,143 @@
+---
+import {
+  Coffee,
+  Sparkles,
+  ArrowRight,
+  MapPin,
+  Zap,
+  Wifi,
+  Star,
+} from "lucide-astro";
+---
+
+<section
+  id="hero"
+  class="min-h-[70vh] bg-linear-to-b from-primary via-secondary/30 to-primary grid grid-cols-1 lg:grid-cols-12 gap-4"
+>
+  <!-- Columna izquierda texto -->
+  <div class="lg:col-span-7 space-y-8 p-10">
+    <!-- texto informativo -->
+    <div class="flex items-center gap-2.5 justify-center">
+      <Coffee class="w-4 h-4 text-darkest animate-bounce" />
+      <span
+        class="text-[11px] sm:text-xs font-semibold tracking-wider uppercase text-dark"
+      >
+        Café & Respostería
+      </span>
+      <span class="text-accent">•</span>
+      <span class="text-[11px] font-medium text-darkest">Insurgentes Sur</span>
+    </div>
+
+    <!-- Título-->
+    <div class="space-y-4">
+      <h1
+        class="font-serif-display text-4xl sm:text-5xl lg:text-6xl font-normal text-ultra-dark tracking-tight leading-[1.12]"
+      >
+        Una pausa distinguida, <br />
+        <span class="italic font-normal text-dark font-serif-display"
+          >un sabor inolvidable.</span
+        >
+      </h1>
+      <p
+        class="text-base sm:text-lg text-darkest/90 leading-relaxed max-w-xl font-light"
+      >
+        El refugio perfecto para tu café matutino, una reunión casual de
+        negocios o tu antojo de la tarde. Especialidad en granos de altura,
+        auténtica <strong>repostería japonesa</strong>, crepas artesanales y
+        cocina gourmet de autor.
+      </p>
+    </div>
+
+    <!-- Algunos servicioes -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+      <div
+        class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-white/70 border border-accent/80 backdrop-blur-sm shadow-xs"
+      >
+        <div
+          class="w-7 h-7 rounded-xl bg-secondary text-dark flex items-center justify-center shrink-0"
+        >
+          <Zap class="w-3.5 h-3.5 text-dark" />
+        </div>
+        <p class="text-xs font-bold text-ultra-dark leading-tight">Grab & Go</p>
+        <p class="text-[10px] text-darkest">Empaque térmico</p>
+      </div>
+
+      <div
+        class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-white/70 border border-accent/80 backdrop-blur-sm shadow-xs"
+      >
+        <div
+          class="w-7 h-7 rounded-xl bg-secondary text-dark flex items-center justify-center shrink-0"
+        >
+          <Wifi class="w-3.5 h-3.5 text-dark" />
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-bold text-ultra-dark leading-tight">
+            Espacio & Wi-Fi
+          </p>
+          <p class="text-[10px] text-darkest">Para trabajar o leer</p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center gap-2.5 p-2.5 rounded-2xl bg-white/70 border border-accent/80 backdrop-blur-sm shadow-xs"
+      >
+        <div
+          class="w-7 h-7 rounded-xl bg-secondary text-dark flex items-center justify-center shrink-0"
+        >
+          <Sparkles class="w-3.5 h-3.5 text-dark" />
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-bold text-ultra-dark leading-tight">
+            Fusión Japonesa
+          </p>
+          <p class="text-[10px] text-darkest">Matcha & Mochis</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="flex flex-col sm:flex-row sm:items-center gap-3.5 pt-2">
+      <!-- CTA Principal -->
+      <a
+        href="#menu"
+        class="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl text-sm font-semibold bg-linear-to-r from-dark-accent to-darker text-white hover:bg-darker shadow-lg shadow-dark/25 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+      >
+        <span>Explorar Nuestra Carta</span>
+        <ArrowRight class="w-4 h-4" />
+      </a>
+
+      <!-- CTA Secundario -->
+      <a
+        href="#horarios"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/90 border border-accent text-ultra-dark hover:bg-secondary hover:text-dark transition-all duration-300 shadow-xs cursor-pointer"
+      >
+        <MapPin class="w-4 h-4 text-dark-accent" />
+        <span>Ubicación & Horarios</span>
+      </a>
+    </div>
+
+    <!-- Micro-indicador de Reseñas / Calidad -->
+    <div class="pt-3 flex items-center gap-4 text-xs text-darkest">
+      <div class="flex items-center gap-1 text-amber-500">
+        <Star class="w-4 h-4 fill-amber-500" />
+        <Star class="w-4 h-4 fill-amber-500" />
+        <Star class="w-4 h-4 fill-amber-500" />
+        <Star class="w-4 h-4 fill-amber-500" />
+        <Star class="w-4 h-4 fill-amber-500" />
+      </div>
+      <span class="font-medium">
+        <strong>4.9 / 5</strong> en satisfacción de comensales en la zona
+      </span>
+    </div>
+  </div>
+
+  <!-- Columna derecha imagen-->
+  <div class="lg:col-span-5 relative">
+    <img
+      src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=900&auto=format&fit=crop"
+      alt="Ambiente estético y elegante de Komorebi Café"
+      class="w-full h-full object-cover"
+      loading="eager"
+    />
+  </div>
+</section>

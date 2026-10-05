@@ -1,0 +1,231 @@
+
+interface MenuItem {
+    id: string;
+    name: string;
+    category: 'cafe' | 'postres' | 'crepas-helados' | 'salados';
+    categoryLabel: string;
+    price: number;
+    description: string;
+    image: string;
+    tags: string[];
+    isSpecialty?: boolean;
+    isJapanese?: boolean;
+    isPopular?: boolean;
+}
+
+export const MENU_DATA: MenuItem[] = [
+    // 1. Café & Bebidas
+    {
+        id: 'c1',
+        name: 'Espresso Doble de Especialidad',
+        category: 'cafe',
+        categoryLabel: 'Café & Bebidas',
+        price: 45,
+        description: 'Extracción balanceada con notas de chocolate amargo, avellana y frutos rojos. Granos de altura 100% arábica.',
+        image: 'https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?q=80&w=500&auto=format&fit=crop',
+        tags: ['Caliente', 'Especialidad', 'Intenso'],
+        isSpecialty: true,
+    },
+    {
+        id: 'c2',
+        name: 'Matcha Latte Ceremonial Uji',
+        category: 'cafe',
+        categoryLabel: 'Café & Bebidas',
+        price: 75,
+        description: 'Matcha de grado ceremonial importado de Kioto, batido artesanalmente con tu elección de leche vegetal o entera.',
+        image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Matcha', 'Favorito'],
+        isJapanese: true,
+        isPopular: true,
+    },
+    {
+        id: 'c3',
+        name: 'Flat White & Velvet Cream',
+        category: 'cafe',
+        categoryLabel: 'Café & Bebidas',
+        price: 65,
+        description: 'Doble ristretto sedoso con microespuma de leche texturizada al punto exacto de dulzura natural.',
+        image: 'https://images.unsplash.com/photo-1577968897966-3d4325b36b61?q=80&w=500&auto=format&fit=crop',
+        tags: ['Caliente', 'Cremoso', 'Especialidad'],
+        isSpecialty: true,
+    },
+    {
+        id: 'c4',
+        name: 'Cold Brew Vainilla & Caramelo',
+        category: 'cafe',
+        categoryLabel: 'Café & Bebidas',
+        price: 70,
+        description: 'Extracción en frío durante 18 horas, servido sobre cubos de hielo con un toque de jarabe de vainilla artesanal.',
+        image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=500&auto=format&fit=crop',
+        tags: ['Frío', 'Refrescante', 'Favorito'],
+        isPopular: true,
+    },
+    {
+        id: 'c5',
+        name: 'Hojicha Roasted Tea Latte',
+        category: 'cafe',
+        categoryLabel: 'Café & Bebidas',
+        price: 75,
+        description: 'Té verde japonés tostado con un característico aroma ahumado y dulce a frutos secos con baja cafeína.',
+        image: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Té Tostado', 'Relajante'],
+        isJapanese: true,
+    },
+
+    // 2. Repostería & Postres Japoneses
+    {
+        id: 'p1',
+        name: 'Mochi Artesanal Surtido (3 piezas)',
+        category: 'postres',
+        categoryLabel: 'Postres & Repostería',
+        price: 85,
+        description: 'Mochi fresco y suave elaborado a mano. Trío de sabores: Matcha, Fresa con chocolate blanco y Anko tradicional.',
+        image: 'https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Hecho a Mano', 'Favorito'],
+        isJapanese: true,
+        isPopular: true,
+    },
+    {
+        id: 'p2',
+        name: 'Dorayaki de Anko & Nutella',
+        category: 'postres',
+        categoryLabel: 'Postres & Repostería',
+        price: 55,
+        description: 'Esponjosos panqueques japoneses rellenos de pasta dulce de judía roja (anko) o suave avellana Nutella.',
+        image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Dulce', 'Tradicional'],
+        isJapanese: true,
+    },
+    {
+        id: 'p3',
+        name: 'Cheesecake Japonés de Matcha',
+        category: 'postres',
+        categoryLabel: 'Postres & Repostería',
+        price: 90,
+        description: 'Pastel de queso estilo soufflé japonés, ultra ligero y esponjoso que se derrite en boca con sabor a matcha suave.',
+        image: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Especialidad', 'Gourmet'],
+        isJapanese: true,
+        isSpecialty: true,
+    },
+    {
+        id: 'p4',
+        name: 'Croissant Mantequilla & Almendras',
+        category: 'postres',
+        categoryLabel: 'Postres & Repostería',
+        price: 60,
+        description: 'Hojaldre 100% mantequilla de textura crocante y aireada, relleno de frangipane y cubierto de almendras tostadas.',
+        image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=500&auto=format&fit=crop',
+        tags: ['Horneado Diario', 'Francés', 'Crocante'],
+        isPopular: true,
+    },
+    {
+        id: 'p5',
+        name: 'Rol de Canela Glaseado con Nuez',
+        category: 'postres',
+        categoryLabel: 'Postres & Repostería',
+        price: 55,
+        description: 'Masa brioche suave y aromática enrollada con canela de Ceilán, azúcar moreno y glaseado sedoso de queso crema.',
+        image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=500&auto=format&fit=crop',
+        tags: ['Horneado Diario', 'Dulce'],
+    },
+
+    // 3. Crepas & Helados Artesanales
+    {
+        id: 'h1',
+        name: 'Crepa París: Fresa, Nutella & Plátano',
+        category: 'crepas-helados',
+        categoryLabel: 'Crepas & Helados',
+        price: 95,
+        description: 'Crepa francesa delgada y dorada rellena de fresas frescas maceradas, rodajas de plátano y generosa Nutella.',
+        image: 'https://images.unsplash.com/photo-1519676867240-f03562e64548?q=80&w=500&auto=format&fit=crop',
+        tags: ['Dulce', 'Favorito', 'Fruta Fresca'],
+        isPopular: true,
+    },
+    {
+        id: 'h2',
+        name: 'Crepa Salada: Cabra, Jamón Serrano & Espinaca',
+        category: 'crepas-helados',
+        categoryLabel: 'Crepas & Helados',
+        price: 110,
+        description: 'Delicada crepa con queso de cabra cremoso, finas lonchas de jamón serrano, espinaca fresca y reducción balsámica.',
+        image: 'https://images.unsplash.com/photo-1628294895950-9805252327bc?q=80&w=500&auto=format&fit=crop',
+        tags: ['Salado', 'Gourmet', 'Especialidad'],
+        isSpecialty: true,
+    },
+    {
+        id: 'h3',
+        name: 'Crepa Tokio: Crema Matcha & Mochi',
+        category: 'crepas-helados',
+        categoryLabel: 'Crepas & Helados',
+        price: 105,
+        description: 'Fusión japonesa con crema ligera de té verde matcha, mini mochis suaves de fresa y coulis de frutos rojos.',
+        image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Fusión', 'Exclusivo'],
+        isJapanese: true,
+    },
+    {
+        id: 'h4',
+        name: 'Helado Artesanal: Matcha & Sésamo Negro',
+        category: 'crepas-helados',
+        categoryLabel: 'Crepas & Helados',
+        price: 65,
+        description: 'Dos bolas de gelato artesanal elaborado con auténtica pasta de sésamo negro tostado y matcha japonés.',
+        image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=500&auto=format&fit=crop',
+        tags: ['Japonés', 'Gelato', 'Refrescante'],
+        isJapanese: true,
+    },
+
+    // 4. Hamburguesas Gourmet, Papas & Hot Dogs
+    {
+        id: 's1',
+        name: 'Hamburguesa Artesanal Clásica Angus',
+        category: 'salados',
+        categoryLabel: 'Burgers & Salados',
+        price: 135,
+        description: '150g de carne Angus seleccionada, queso cheddar madurado, lechuga fresca, jitomate y aderezo especial en pan brioche de la casa.',
+        image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=500&auto=format&fit=crop',
+        tags: ['Salado', 'Angus', 'Favorito'],
+        isPopular: true,
+    },
+    {
+        id: 's2',
+        name: 'Hamburguesa Trufada & Hongos Salteados',
+        category: 'salados',
+        categoryLabel: 'Burgers & Salados',
+        price: 155,
+        description: 'Carne jugosa, champiñones salteados al tomillo, queso suizo fundido y mayonesa con toque de trufa negra.',
+        image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=500&auto=format&fit=crop',
+        tags: ['Gourmet', 'Trufa', 'Especialidad'],
+        isSpecialty: true,
+    },
+    {
+        id: 's3',
+        name: 'Papas Rústicas Trufadas con Parmesano',
+        category: 'salados',
+        categoryLabel: 'Burgers & Salados',
+        price: 75,
+        description: 'Papas naturales cortadas a mano, doblemente fritas para máxima crocancia, con aceite de trufa, romero y lluvia de parmesano.',
+        image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?q=80&w=500&auto=format&fit=crop',
+        tags: ['Crocante', 'Para Compartir', 'Favorito'],
+        isPopular: true,
+    },
+    {
+        id: 's4',
+        name: 'Hot Dog Gourmet de Autor con Tocino',
+        category: 'salados',
+        categoryLabel: 'Burgers & Salados',
+        price: 95,
+        description: 'Salchicha artesanal de res ahumada, cebolla caramelizada lentamente, tocino crujiente picado y aderezo cremoso de mostaza dulce.',
+        image: 'https://images.unsplash.com/photo-1619740455993-9e612b1af08a?q=80&w=500&auto=format&fit=crop',
+        tags: ['Gourmet', 'Salado', 'Autor'],
+    },
+];
+
+export const CATEGORIES = [
+    { id: 'all', label: 'Todo el Menú', icon: '✨' },
+    { id: 'cafe', label: 'Café & Bebidas', icon: '☕' },
+    { id: 'postres', label: 'Postres & Repostería', icon: '🍰' },
+    { id: 'crepas-helados', label: 'Crepas & Helados', icon: '🥞' },
+    { id: 'salados', label: 'Burgers & Salados', icon: '🍔' },
+];

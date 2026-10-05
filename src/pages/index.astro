@@ -1,0 +1,49 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import InteractiveMenu from "../components/InteractiveMenu";
+import Services from "../components/Services.astro";
+import LocationHours from "../components/LocationHours";
+import ContactForm from "../components/ContactForm";
+import { siteConfig } from "../config/seo";
+---
+
+<MainLayout
+  title="Komorebi Café | Cafetería Boutique, Repostería Japonesa & Brunch en CDMX"
+  description="Disfruta de café de especialidad, postres japoneses como mochis y matcha, crepas dulces y saladas, helados artesanales, hamburguesas gourmet y hot dogs de autor. Consumo en el lugar o para llevar sobre Av. Insurgentes Sur."
+  image={siteConfig.defaultOgImage}
+  imageAlt="Komorebi Café & Repostería Boutique en Insurgentes Sur CDMX"
+  ogType="website"
+  keywords={[
+    "cafeteria cdmx",
+    "cafe de especialidad insurgentes sur",
+    "postres japoneses cdmx",
+    "mochis artesanales",
+    "matcha latte cdmx",
+    "dorayaki",
+    "crepas dulces y saladas",
+    "hamburguesas gourmet",
+    "helado artesanal",
+    "cafeteria bonita cdmx",
+    "cafeteria pet friendly y wifi",
+  ]}
+>
+  <!-- Sección 1: Hero con propuesta de valor y CTAs -->
+  <Hero />
+
+  <!-- Sección 2: Sobre Nosotros / La Esencia y Atención al Detalle -->
+  <About />
+
+  <!-- Sección 3: Nuestra Carta / Menú Interactivo Filtrable -->
+  <InteractiveMenu client:visible />
+
+  <!-- Sección 4: Experiencia & Servicios (En el lugar / Para llevar / Eventos) -->
+  <Services />
+
+  <!-- Sección 5: Horarios & Ubicación con Estado en Vivo y Google Maps -->
+  <LocationHours client:visible />
+
+  <!-- Sección 6: Formulario de Contacto Directo & Preguntas Frecuentes -->
+  <ContactForm client:visible />
+</MainLayout>

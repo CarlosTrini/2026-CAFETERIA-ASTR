@@ -1,0 +1,153 @@
+---
+import { UtensilsCrossed, ShoppingBag, CheckCircle2 } from "lucide-astro";
+---
+
+<section
+  id="experiencia"
+  class="py-16 md:py-24 bg-white/70 border-b border-accent relative"
+>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <!-- Header -->
+    <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+      <h2
+        class="font-serif-display text-3xl sm:text-4xl font-bold text-ultra-dark"
+      >
+        Dos formas de vivir la experiencia Komorebi
+      </h2>
+      <p class="text-sm sm:text-base text-darkest">
+        Diseñado para adaptarse a tu ritmo: una pausa reconfortante en nuestro
+        local o tus favoritos listos para llevar.
+      </p>
+    </div>
+
+    <!-- 2 Main Modality Cards + 1 Special Box -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <!-- Card 1: Consumo en el Lugar -->
+      <div
+        class="p-8 rounded-3xl bg-primary border border-accent hover:border-dark-accent transition-all duration-300 shadow-xs hover:shadow-xl flex flex-col justify-between group"
+      >
+        <div class="space-y-6">
+          <div class="flex items-center justify-between">
+            <div
+              class="w-14 h-14 rounded-2xl bg-secondary text-dark flex items-center justify-center shadow-inner"
+            >
+              <UtensilsCrossed class="w-7 h-7" />
+            </div>
+            <span
+              class="px-3 py-1 rounded-full text-xs font-bold bg-white text-dark border border-accent"
+            >
+              En Nuestro Espacio
+            </span>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="font-serif-display text-2xl font-bold text-ultra-dark">
+              Consumo en el Lugar
+            </h3>
+            <p class="text-sm text-darkest leading-relaxed">
+              Un santuario de calma con mesas perfectamente ordenadas, vajilla
+              de cerámica artesanal y el aroma a café recién molido.
+            </p>
+          </div>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-darkest">
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span
+                >Conexión Wi-Fi de alta velocidad para home-office o lectura</span
+              >
+            </li>
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span>Ambiente limpio, sereno y música ambiental relajante</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span
+                >Servicio en mesa con atención al detalle y vajilla estética</span
+              >
+            </li>
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span>Opciones para compartir y disfrutar con calma</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-accent">
+          <a
+            href="#horarios"
+            class="text-xs font-bold text-dark hover:text-ultra-dark inline-flex items-center gap-1.5 transition-colors"
+          >
+            <span>Ver cómo llegar a nuestro local</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Para Llevar (Takeout) -->
+      <div
+        class="p-8 rounded-3xl bg-primary border border-accent hover:border-dark-accent transition-all duration-300 shadow-xs hover:shadow-xl flex flex-col justify-between group"
+      >
+        <div class="space-y-6">
+          <div class="flex items-center justify-between">
+            <div
+              class="w-14 h-14 rounded-2xl bg-secondary text-dark flex items-center justify-center shadow-inner"
+            >
+              <ShoppingBag class="w-7 h-7" />
+            </div>
+            <span
+              class="px-3 py-1 rounded-xl text-xs font-bold bg-white text-dark border border-accent"
+            >
+              Takeout Express
+            </span>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="font-serif-display text-2xl font-bold text-ultra-dark">
+              Para Llevar (Takeout)
+            </h3>
+            <p class="text-sm text-darkest leading-relaxed">
+              Empaques especiales y ecológicos para que disfrutes de tu café,
+              postres, crepas o hamburguesas dondequiera que vayas con la misma
+              frescura.
+            </p>
+          </div>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-darkest">
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span>Vasos térmicos y cajas reforzadas biodegradables</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span>Pide por adelantado vía WhatsApp y recoge sin esperas</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span
+                >Cajas surtidas de mochis y repostería listas para obsequiar</span
+              >
+            </li>
+            <li class="flex items-center gap-2.5">
+              <CheckCircle2 class="w-4 h-4 text-dark-accent shrink-0" />
+              <span>Empaque sellado e higiénico con sello de seguridad</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-accent">
+          <a
+            href="https://wa.me/525512345678?text=Hola,%20quisiera%20hacer%20un%20pedido%20para%20llevar"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-xs font-bold text-whatsapp-dark hover:text-dark inline-flex items-center gap-1.5 transition-colors"
+          >
+            <span>Ordenar por WhatsApp para recoger</span>
+            <span>→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tags";
+
+:root {
+  --color-primary: #fbf5f5;
+  --color-secondary: #f7e9e9;
+  --color-accent: #f0d8d8;
+  --color-dark-accent: #ac5656;
+  --color-dark: #8f4646;
+  --color-darker: #783c3c;
+  --color-darkest: #653737;
+  --color-ultra-dark: #351a1a;
+  
+  /* WhatsApp Brand Colors */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #128C7E;
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-dark-accent: var(--color-dark-accent);
+  --color-dark: var(--color-dark);
+  --color-darker: var(--color-darker);
+  --color-darkest: var(--color-darkest);
+  --color-ultra-dark: var(--color-ultra-dark);
+  
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
+}
+
+/* Custom transitions and scrollbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-darker);
+}

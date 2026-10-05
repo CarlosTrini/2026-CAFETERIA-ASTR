@@ -1,0 +1,221 @@
+---
+import { Sparkles, Coffee, ShieldCheck, Eye, Quote, Check } from "lucide-astro";
+---
+
+<section
+  id="esencia"
+  class="py-20 md:py-28 bg-white/80 border-y border-accent relative overflow-hidden"
+>
+  <!-- Subtle decorative ambient elements -->
+  <div
+    class="absolute -top-20 -right-20 w-80 h-80 bg-secondary/60 rounded-full blur-3xl pointer-events-none -z-10"
+  >
+  </div>
+  <div
+    class="absolute -bottom-20 -left-20 w-80 h-80 bg-accent/30 rounded-full blur-3xl pointer-events-none -z-10"
+  >
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <!-- Encabezado de Sección Editorial -->
+    <div class="text-center max-w-2xl mx-auto space-y-3 mb-16 md:mb-20">
+      <h2
+        class="font-serif-display text-3xl sm:text-4xl md:text-5xl font-normal text-ultra-dark leading-tight"
+      >
+        La Esencia: Armonía y devoción <br class="hidden sm:inline" />
+        <span class="italic font-normal text-dark">por cada detalle.</span>
+      </h2>
+      <p
+        class="text-sm sm:text-base text-darkest/90 leading-relaxed font-light max-w-xl mx-auto"
+      >
+        Un rincón pensado para quienes aprecian la pulcritud, el silencio
+        agradable y el verdadero sabor de una receta bien ejecutada.
+      </p>
+    </div>
+
+    <!-- Composición Principal -->
+    <div
+      class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center mb-16"
+    >
+      <!-- Columna Izquierda: Fotografía con Marco Editorial & Cita -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative max-w-sm mx-auto sm:max-w-md lg:max-w-none">
+          <!-- Marco de Foto con bordes redondeados y marco suave -->
+          <div
+            class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-4/5 bg-secondary relative group"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?q=80&w=800&auto=format&fit=crop"
+              alt="Barista preparando café de especialidad con precisión"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="lazy"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-ultra-dark/60 via-transparent to-transparent"
+            >
+            </div>
+
+            <!-- Badge interior -->
+            <div
+              class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-white/95 backdrop-blur-md border border-white/60 text-left shadow-lg"
+            >
+              <p
+                class="text-[10px] font-bold uppercase tracking-widest text-dark-accent"
+              >
+                Palabras de nuestra fundadora
+              </p>
+              <p
+                class="font-serif-display text-xs sm:text-sm font-bold text-ultra-dark"
+              >
+                «Creamos este espacio para ofrecer una pausa relajante, ordenada
+                e inspiradora en medio de la ciudad.»
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Historia y Narrativa -->
+      <div class="lg:col-span-7 space-y-6 text-left px-5">
+        <div class="space-y-4">
+          <h3
+            class="font-serif-display text-2xl sm:text-3xl font-normal text-ultra-dark leading-snug"
+          >
+            Donde el orden y la estética se unen a un menú sorprendentemente
+            diverso
+          </h3>
+          <p
+            class="text-sm sm:text-base text-darkest/90 leading-relaxed font-light"
+          >
+            En una zona dinámica como Insurgentes Sur, sabemos que el tiempo
+            vale oro y el ambiente importa. Komorebi nació bajo la visión de su
+            fundadora: una mujer joven y perfeccionista apasionada por los
+            detalles, el orden visual y la pulcritud absoluta.
+          </p>
+          <p
+            class="text-sm sm:text-base text-darkest/90 leading-relaxed font-light"
+          >
+            Aquí cada elemento está calculado: la iluminación cálida que no
+            cansa la vista, el aroma reconfortante a café recién tostado, la
+            vajilla de tacto suave y una carta que combina la sofisticación de
+            la <strong>pastelería japonesa</strong> con la satisfacción de un brunch
+            salado o una hamburguesa de autor impecablemente preparada.
+          </p>
+        </div>
+
+        <!-- Mini Stats de Confianza -->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 border-t border-accent"
+        >
+          <div
+            class="p-3 rounded-2xl bg-primary/80 border border-accent flex items-center justify-center gap-2"
+          >
+            <p class="font-serif-display font-bold text-sm text-dark">
+              Artesanal & Fresco
+            </p>
+            <Check class="w-4 h-4" />
+          </div>
+          <div
+            class="p-3 rounded-2xl bg-primary/80 border border-accent flex items-center justify-center gap-2"
+          >
+            <p class="font-serif-display font-bold text-sm text-dark">
+              100% Calidad
+            </p>
+            <Check class="w-4 h-4" />
+          </div>
+          <div
+            class="p-3 rounded-2xl bg-primary/80 border border-accent col-span-2 sm:col-span-1 flex items-center gap-2 justify-center"
+          >
+            <p class="font-serif-display font-bold text-sm text-dark">
+              Servicio a diario
+            </p>
+            <Check class="w-4 h-4" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjetas pilares... -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Pilar 01 -->
+      <div
+        class="p-6 rounded-2xl bg-primary hover:border-dark-accent transition-all duration-300 shadow-xs hover:shadow-md space-y-3 group text-left"
+      >
+        <div class="flex items-center justify-center mb-2">
+          <div
+            class="w-8 h-8 rounded-xl bg-secondary text-dark flex items-center justify-center"
+          >
+            <Eye class="w-4 h-4" />
+          </div>
+        </div>
+        <h4 class="font-serif-display font-bold text-base text-ultra-dark">
+          Pulcritud & Orden Visual
+        </h4>
+        <p class="text-xs text-darkest leading-relaxed font-light">
+          Un espacio impecable donde trabajar, leer o conversar sin
+          distracciones ni ruidos invasivos.
+        </p>
+      </div>
+
+      <!-- Pilar 02 -->
+      <div
+        class="p-6 rounded-xl bg-primary hover:border-dark-accent transition-all duration-300 shadow-xs hover:shadow-md space-y-3 group text-left"
+      >
+        <div class="flex items-center justify-center mb-2">
+          <div
+            class="w-8 h-8 rounded-xl bg-secondary text-dark flex items-center justify-center"
+          >
+            <Sparkles class="w-4 h-4" />
+          </div>
+        </div>
+        <h4 class="font-serif-display font-bold text-base text-ultra-dark">
+          Fusión Japonesa & Gourmet
+        </h4>
+        <p class="text-xs text-darkest leading-relaxed font-light">
+          Auténtico té matcha de Kioto, mochis suaves y dorayakis junto a crepas
+          y hamburguesas artesanales.
+        </p>
+      </div>
+
+      <!-- Pilar 03 -->
+      <div
+        class="p-6 rounded-xl bg-primary hover:border-dark-accent transition-all duration-300 shadow-xs hover:shadow-md space-y-3 group text-left"
+      >
+        <div class="flex items-center justify-center mb-2">
+          <div
+            class="w-8 h-8 rounded-xl bg-secondary text-dark flex items-center justify-center"
+          >
+            <Coffee class="w-4 h-4" />
+          </div>
+        </div>
+        <h4 class="font-serif-display font-bold text-base text-ultra-dark">
+          Café de Especialidad
+        </h4>
+        <p class="text-xs text-darkest leading-relaxed font-light">
+          Granos de origen seleccionados y calibrados a diario para un perfil
+          aromático balanceado y memorable.
+        </p>
+      </div>
+
+      <!-- Pilar 04 -->
+      <div
+        class="p-6 rounded-xl bg-primary hover:border-dark-accent transition-all duration-300 shadow-xs hover:shadow-md space-y-3 group text-left"
+      >
+        <h4 class="font-serif-display font-bold text-base text-ultra-dark">
+          <div class="flex items-center justify-center mb-2">
+            <div
+              class="w-8 h-8 rounded-xl bg-secondary text-dark flex items-center justify-center"
+            >
+              <ShieldCheck class="w-4 h-4" />
+            </div>
+          </div>
+          Grab & Go Sin Fricción
+        </h4>
+        <p class="text-xs text-darkest leading-relaxed font-light">
+          Empaques térmicos premium de alta gama para que tu café y alimentos
+          lleguen perfectos a tu oficina.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
